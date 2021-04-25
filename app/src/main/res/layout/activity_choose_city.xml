@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+
+
+
+
+    <TextView
+        android:id="@+id/id_signIn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:background="@color/color_app"
+        android:fontFamily="@font/arefruqaabold"
+        android:text="Choose the city"
+        android:textAlignment="center"
+        android:paddingTop="15dp"
+        android:textColor="@color/white"
+        android:textSize="50px"
+        android:textStyle="bold"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/arbutusslabregular"
+        android:text="CHOOSE THE CITY"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnDublin"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/arefruqaabold"
+        android:shadowColor="#595353"
+        android:text="Dublin"
+        android:textColor="#FFF"
+        android:textSize="35px"
+        app:backgroundTint="#40ACAC" />
+
+
+    <Button
+        android:id="@+id/btnParis"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/arefruqaabold"
+        android:shadowColor="#595353"
+        android:text="Paris"
+        android:textColor="#FFF"
+        android:textSize="35px"
+        app:backgroundTint="#40ACAC" />
+
+    <TextView
+        android:id="@+id/id_empty"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="322dp"
+        android:background="@color/color_bottom"
+        android:fontFamily="@font/arefruqaabold"
+        android:paddingTop="250dp"
+        android:text=" "
+        android:textColor="@color/white"
+        android:textSize="50px"
+        android:textStyle="bold" />
+
+
+
+
+</LinearLayout>
