@@ -30,6 +30,20 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val mapFragment = supportFragmentManager
                 .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
+
+        val actionBar = supportActionBar
+        if (actionBar != null) {
+            actionBar.title = "Map"
+
+            //back button
+            actionBar.setDisplayHomeAsUpEnabled(true)
+
+
+        }
+
+
+
+
     }
 
 
@@ -148,37 +162,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        val inflater = menuInflater
-        inflater.inflate(R.menu.map_options, menu)
-        return true
-    }
 
-    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
-        // Change the map type based on the user's selection.
-        R.id.normal_map -> {
-            map.mapType = GoogleMap.MAP_TYPE_NORMAL
-            true
-        }
-        R.id.hybrid_map -> {
-            map.mapType = GoogleMap.MAP_TYPE_HYBRID
-            true
-        }
-        R.id.satellite_map -> {
-            map.mapType = GoogleMap.MAP_TYPE_SATELLITE
-            true
-        }
-        R.id.terrain_map -> {
-            map.mapType = GoogleMap.MAP_TYPE_TERRAIN
-            true
-        }
-
-      //  R.id.paris -> {
-       //     map = GoogleMap.PARIS
-        //    true
-       // }
-        else -> super.onOptionsItemSelected(item)
-    }
 
     private fun setMapLongClick(map: GoogleMap) {
         map.setOnMapClickListener { latLng ->
@@ -205,20 +189,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_maps)
 
-        val actionBar = supportActionBar
-        if (actionBar != null) {
-            actionBar.title = "Map"
-
-            //back button
-            actionBar.setDisplayHomeAsUpEnabled(true)
-
-
-        }
-    }
 
 
 

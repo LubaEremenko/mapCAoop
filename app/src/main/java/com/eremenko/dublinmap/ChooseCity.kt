@@ -3,6 +3,7 @@ package com.eremenko.dublinmap
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_choose_city.*
 
 class ChooseCity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,16 +15,19 @@ class ChooseCity : AppCompatActivity() {
 
         // made btn listener
 
-        val btnDublin
         btnDublin.setOnClickListener {
-            val intent = Intent(this, MapsActivity::class.java)
-            startActivity(intent)
+            Intent(this, MapsActivity::class.java).also {
+                startActivity(it)
+            }
+
         }
 
-        val btnParis
+
         btnParis.setOnClickListener {
-            val intent = Intent(this, MapsActivity::class.java)
-            startActivity(intent)
+            Intent(this, MapsActivity::class.java).also {
+                startActivity(it)
+            }
+
         }
 
 

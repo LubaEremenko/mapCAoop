@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_gravity="center">
-
-
-
+    android:layout_gravity="center"
+    android:orientation="vertical">
 
 
     <TextView
@@ -19,9 +16,9 @@
         android:layout_marginTop="1dp"
         android:background="@color/color_app"
         android:fontFamily="@font/arefruqaabold"
+        android:paddingTop="15dp"
         android:text="Choose the city"
         android:textAlignment="center"
-        android:paddingTop="15dp"
         android:textColor="@color/white"
         android:textSize="50px"
         android:textStyle="bold"
@@ -38,7 +35,7 @@
         android:textAlignment="center"
         android:textColor="#000"
         android:textSize="20dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnDublin"
@@ -82,8 +79,6 @@
         android:textColor="@color/white"
         android:textSize="50px"
         android:textStyle="bold" />
-
-
 
 
 </LinearLayout>
