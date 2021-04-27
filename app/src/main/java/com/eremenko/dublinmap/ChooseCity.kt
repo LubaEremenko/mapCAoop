@@ -4,15 +4,18 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_choose_city.*
 
 public class ChooseCity : AppCompatActivity() {
 private Button1 btn_Dublin;
     private Button2 btn_Paris;
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choose_city)
+
         val actionBar = supportActionBar
         actionBar!!.title = "Choose city"
 
