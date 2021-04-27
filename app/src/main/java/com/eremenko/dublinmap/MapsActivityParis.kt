@@ -31,7 +31,7 @@ class MapsActivityParis : AppCompatActivity(), OnMapReadyCallback {
 
         val actionBar = supportActionBar
         if (actionBar != null) {
-            actionBar.title = "Map"
+            actionBar.title = "Paris Map"
 
             //back button
             actionBar.setDisplayHomeAsUpEnabled(true)
@@ -96,7 +96,7 @@ class MapsActivityParis : AppCompatActivity(), OnMapReadyCallback {
         }
     }
 
-    override fun onMapReady(googleMap: GoogleMap) {78797
+    override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
         // Add a marker in Paris and move the camera

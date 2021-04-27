@@ -58,20 +58,27 @@ import kotlinx.android.synthetic.main.activity_choose_city.*
         actionBar!!.title = "Choose city"
 
         btnParis.setOnClickListener {
-            val intent = Intent(this, MapsActivityParis::class.java).also {
-                startActivity(intent)
-            }
+            val intent = Intent(this, MapsActivityParis::class.java)
+            startActivity(intent)
 
         }
 
         btnDublin.setOnClickListener {
-            val intent = Intent(this, MapsActivityDublin::class.java).also {
-                startActivity(intent)
-            }
+            val intent = Intent(this, MapsActivityDublin::class.java)
+            startActivity(intent)
 
         }
 
 
-
     }
-}
+
+
+
+
+
+
+
+
+
+
+ }

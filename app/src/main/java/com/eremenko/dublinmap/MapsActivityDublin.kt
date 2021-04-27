@@ -36,7 +36,7 @@ class MapsActivityDublin : AppCompatActivity(), OnMapReadyCallback {
 
         val actionBar = supportActionBar
         if (actionBar != null) {
-            actionBar.title = "Map"
+            actionBar.title = "Dublin Map"
 
             //back button
             actionBar.setDisplayHomeAsUpEnabled(true)
@@ -122,9 +122,7 @@ class MapsActivityDublin : AppCompatActivity(), OnMapReadyCallback {
         val dublinSpirе = LatLng(53.349713, -6.260088)
 
 // Add a marker in Paris and move the camera
-        val paris1 = LatLng(48.870154, 2.350223)
-        val paris2 = LatLng(48.867372, 2.280897)
-        val paris3 = LatLng(48.872583, 2.295048)
+
 
         val zoomLevel = 15f
 
@@ -134,10 +132,6 @@ class MapsActivityDublin : AppCompatActivity(), OnMapReadyCallback {
         map.moveCamera(CameraUpdateFactory.newLatLng(dublinGreen))
 
 
-        map.addMarker(MarkerOptions().position(paris1).title("Marker in paris1"))
-        map.addMarker(MarkerOptions().position(paris2).title("Marker in paris2"))
-        map.addMarker(MarkerOptions().position(paris3).title("Marker in paris3"))
-        map.moveCamera(CameraUpdateFactory.newLatLng(paris3))
 
 
         //  ZOOM LEVEL
@@ -146,12 +140,9 @@ class MapsActivityDublin : AppCompatActivity(), OnMapReadyCallback {
         map.moveCamera((CameraUpdateFactory.newLatLngZoom(dublinSpirе, zoomLevel )))
 
 
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(paris2, 15f))
-        map.moveCamera((CameraUpdateFactory.newLatLngZoom(paris3, zoomLevel)))
-
         // ADD MARKER
         map.addMarker(MarkerOptions().position(dublinSpirе).title("Marker Dublin Spirе"))
-        map.addMarker(MarkerOptions().position(paris3).title("Marker Paris3"))
+
 
         setMapLongClick(map)
         setPoiClick(map)
