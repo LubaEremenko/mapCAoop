@@ -19,9 +19,12 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import java.util.*
 
-class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
+class MapsActivityDublin : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var map: GoogleMap
     private val REQUEST_LOCATION_PERMISSION = 1
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -107,6 +110,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         map = googleMap
 
         // Add a marker in Dublin and move the camera
+        val dublin = LatLng(53.350140, -6.266155)
+        map.addMarker(MarkerOptions().position(dublin).title("Marker in Dublin"))
+        map.moveCamera(CameraUpdateFactory.newLatLng(dublin))
+
+
+      // Add a marker in Dublin and move the camera
 
         val dublinGreen = LatLng(53.338126, -6.259924)
         val dublinPhenix = LatLng(53.356290, -6.334203)
